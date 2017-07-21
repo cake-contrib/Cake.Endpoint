@@ -128,6 +128,7 @@ Task( "Pack" )
 	EnsureDirectoryExists( nugetDirectory );
 
 	DotNetCorePack( project.FullPath, new DotNetCorePackSettings {
+		Configuration = configuration,
 		IncludeSymbols = true,
 		NoBuild = true,
 		OutputDirectory = nugetDirectory,
