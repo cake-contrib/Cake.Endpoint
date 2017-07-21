@@ -1,0 +1,32 @@
+[
+  {
+    "Id": "Some.Service.Xyz.Service1",
+    "Files": [
+      {
+        "SourcePath": "some/source/path/file.ext",
+        "TargetPath": "some/source/path/"
+      }
+    ],
+    "Directories": [
+      {
+        "SourcePath": "some/source/path/",
+        "TargetPath": "some/source/path/"
+      }
+    ]
+  },
+  {
+    "Id": "Some.Service.Xyz.Service2",
+    "Files": [
+      {
+        "SourcePath": "some/source/path/file.ext",
+        "TargetPath": "some/source/path/"
+      }
+    ],
+    "Directories": [
+      {
+        "SourcePath": "some/source/path/",
+        "TargetPath": "some/source/path/"
+      }
+    ]
+  }
+]

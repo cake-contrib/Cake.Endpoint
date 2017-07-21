@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.6</TargetFramework>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <Title>Cake.Endpoint</Title>
+    <Description>Json based endpoint orchestration addin for cake build.</Description>
+    <Copyright>Copyright (c) engelbert strauss GmbH &amp; Co. KG</Copyright>
+    <Authors>engelbert strauss GmbH &amp; Co. KG,cake-contrib</Authors>
+    <PackageId>Cake.Endpoint</PackageId>
+    <PackageTags>Cake;Script;Build;Endpoint;Addin</PackageTags>
+    <PackageIconUrl>https://cdn.rawgit.com/cake-contrib/graphics/a5cf0f881c390650144b2243ae551d5b9f836196/png/cake-contrib-medium.png</PackageIconUrl>
+    <PackageLicenseUrl>https://github.com/nalla/cake.endpoint/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/nalla/cake.endpoint</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/nalla/cake.endpoint</RepositoryUrl>
+    <OutputType>Library</OutputType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>True</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Cake.Common" Version="0.16.2" />
+    <PackageReference Include="Cake.Core" Version="0.16.2" />
+  </ItemGroup>
+
+</Project>
