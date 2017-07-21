@@ -6,7 +6,7 @@
     <Title>Cake.Endpoint</Title>
     <Description>Json based endpoint orchestration addin for cake build.</Description>
     <Copyright>Copyright (c) engelbert strauss GmbH &amp; Co. KG</Copyright>
-    <Authors>engelbert strauss GmbH &amp; Co. KG,cake-contrib</Authors>
+    <Authors>engelbert strauss GmbH &amp; Co. KG</Authors>
     <PackageId>Cake.Endpoint</PackageId>
     <PackageTags>Cake;Script;Build;Endpoint;Addin</PackageTags>
     <PackageIconUrl>https://cdn.rawgit.com/cake-contrib/graphics/a5cf0f881c390650144b2243ae551d5b9f836196/png/cake-contrib-medium.png</PackageIconUrl>
