@@ -13,7 +13,7 @@ namespace Cake.Endpoint
 	public static class EndpointAliases
 	{
 		/// <summary>
-		/// Creates an endpoint by copying all files and directories accoring to the endpoint definition.
+		/// Creates endpoints by copying all files and directories accoring to the endpoint definition.
 		/// </summary>
 		/// <param name="context">The context.</param>
 		/// <param name="endpoints">Required. Endpoint list defining all files and directories.</param>
@@ -24,7 +24,8 @@ namespace Cake.Endpoint
 		/// Task("Create")
 		///     .Does(() =>
 		/// {
-		///     EndpointCreate( new Endpoint() );
+		///     var endpoints = DeserializeJsonFromFile<IEnumerable<Endpoint>>( "./endpoints.json" );
+		///     EndpointCreate( endpoints );
 		/// });
 		/// ]]>
 		/// </code>
@@ -47,7 +48,7 @@ namespace Cake.Endpoint
 		}
 
 		/// <summary>
-		/// Creates an endpoint by copying all files and directories accoring to the endpoint definition.
+		/// Creates endpoints by copying all files and directories accoring to the endpoint definition.
 		/// </summary>
 		/// <param name="context">The context.</param>
 		/// <param name="endpoints">Required. Endpoint list defining all files and directories.</param>
@@ -59,7 +60,11 @@ namespace Cake.Endpoint
 		/// Task("Create")
 		///     .Does(() =>
 		/// {
-		///     EndpointCreate( new Endpoint() );
+		///     var endpoints = DeserializeJsonFromFile<IEnumerable<Endpoint>>( "./endpoints.json" );
+		///     EndpointCreate( endpoints, new EndpointCreatorSettings
+		///     {
+		///       ZipTargetPath = true
+		///     } );
 		/// });
 		/// ]]>
 		/// </code>

@@ -6,18 +6,28 @@
 	public class Endpoint
 	{
 		/// <summary>
-		/// List of directory copy statements.
+		/// Gets or sets a list of directory copy statements.
 		/// </summary>
+		/// <value>
+		///   Collection of copy statements that will be copied by the endpoint creator.
+		/// </value>
 		public Directory[] Directories { get; set; }
 
 		/// <summary>
-		/// List of file copy statements.
+		/// Gets or sets a list of file copy statements
 		/// </summary>
+		/// <value>
+		///   Collection of copy statements that will be copied by the endpoint creator.
+		/// </value>
 		public File[] Files { get; set; }
 
 		/// <summary>
-		/// Id of endpoint, used for the target directory.
+		/// Gets or sets a value indicating the Id of an endpoint.
+		/// The Id is used for the relative target directory.
 		/// </summary>
+		/// <value>
+		///   A string representing the endpoint.
+		/// </value>
 		public string Id { get; set; }
 	}
 }
