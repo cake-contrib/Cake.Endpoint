@@ -50,7 +50,7 @@ string[] GetReleaseNotes()
 
 	try
 	{
-		tag = GitDescribe( ".", "HEAD~1", false, GitDescribeStrategy.All, 0 );
+		tag = GitDescribe( ".", "HEAD~1", false, GitDescribeStrategy.Tags, 0 );
 	}
 	catch( Exception e)
 	{
