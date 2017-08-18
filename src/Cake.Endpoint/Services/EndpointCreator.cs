@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using Cake.Common.IO;
 using Cake.Core;
@@ -52,13 +52,22 @@ namespace Cake.Endpoint.Services
 			{
 				foreach( File file in endpoint.Files )
 				{
-					DirectoryPath targetFilePath = targetEndpointPath.Combine( file.TargetPath );
-					context.EnsureDirectoryExists( targetFilePath );
-
 					string fileSourcePath = file.SourcePath;
 					if( !string.IsNullOrWhiteSpace( settings?.BuildConfiguration ) )
 						fileSourcePath = fileSourcePath.Replace( "[BuildConfiguration]", settings.BuildConfiguration );
-					context.CopyFileToDirectory( fileSourcePath, targetFilePath );
+
+					if( file.IsFilePath )
+					{
+						FilePath targetPath = targetEndpointPath.CombineWithFilePath( file.TargetPath );
+						context.EnsureDirectoryExists( targetPath.GetDirectory() );
+						context.CopyFile( file.SourcePath, targetPath );
+					}
+					else
+					{
+						DirectoryPath targetPath = targetEndpointPath.Combine( file.TargetPath );
+						context.EnsureDirectoryExists( targetPath );
+						context.CopyFileToDirectory( fileSourcePath, targetPath );
+					}
 				}
 			}
 

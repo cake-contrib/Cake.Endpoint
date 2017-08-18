@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Cake.Endpoint.Model;
 using Cake.Endpoint.Services;
 using Cake.Endpoint.Tests.Fixtures;
@@ -124,6 +124,12 @@ namespace Cake.Endpoint.Tests.Units
 						{
 							SourcePath = "Source/Sourcefile2.txt",
 							TargetPath = "Target/Subtarget2/"
+						},
+						new File
+						{
+							SourcePath = "Source/Sourcefile3.txt",
+							TargetPath = "Target/Subtarget3/newname.txt",
+							IsFilePath = true
 						}
 					}
 				}
@@ -132,12 +138,14 @@ namespace Cake.Endpoint.Tests.Units
 			fixture.FileSystem.CreateDirectory( "/Working/Source" );
 			fixture.FileSystem.CreateFile( "/Working/Source/Sourcefile1.txt" );
 			fixture.FileSystem.CreateFile( "/Working/Source/Sourcefile2.txt" );
+			fixture.FileSystem.CreateFile( "/Working/Source/Sourcefile3.txt" );
 
 			var result = Record.Exception( () => fixture.Run() );
 
 			Assert.Null( result );
 			Assert.True( fixture.FileSystem.GetFile( "/Working/SomeEndpoint/Target/Subtarget1/sourcefile1.txt" ).Exists );
 			Assert.True( fixture.FileSystem.GetFile( "/Working/SomeEndpoint/Target/Subtarget2/sourcefile2.txt" ).Exists );
+			Assert.True( fixture.FileSystem.GetFile( "/Working/SomeEndpoint/Target/Subtarget3/newname.txt" ).Exists );
 		}
 
 		[Fact]
