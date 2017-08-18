@@ -10,9 +10,9 @@
     <PackageId>Cake.Endpoint</PackageId>
     <PackageTags>Cake;Script;Build;Endpoint;Addin</PackageTags>
     <PackageIconUrl>https://cdn.rawgit.com/cake-contrib/graphics/a5cf0f881c390650144b2243ae551d5b9f836196/png/cake-contrib-medium.png</PackageIconUrl>
-    <PackageLicenseUrl>https://github.com/nalla/cake.endpoint/blob/master/LICENSE</PackageLicenseUrl>
-    <PackageProjectUrl>https://github.com/nalla/cake.endpoint</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/nalla/cake.endpoint</RepositoryUrl>
+    <PackageLicenseUrl>https://github.com/cake-contrib/cake.endpoint/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/cake-contrib/cake.endpoint</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/cake-contrib/cake.endpoint</RepositoryUrl>
     <OutputType>Library</OutputType>
   </PropertyGroup>
 
