@@ -16,6 +16,10 @@
     <OutputType>Library</OutputType>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(OS)|$(TargetFramework)'=='Unix|net46'">
+    <FrameworkPathOverride>/usr/local/lib/mono/4.6-api/</FrameworkPathOverride>
+  </PropertyGroup>
+
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <DebugType>pdbonly</DebugType>
     <DebugSymbols>True</DebugSymbols>
