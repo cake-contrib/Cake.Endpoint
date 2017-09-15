@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard1.6;net45</TargetFrameworks>
+    <TargetFrameworks>netstandard1.6;net46</TargetFrameworks>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <Title>Cake.Endpoint</Title>
     <Description>Json based endpoint orchestration addin for cake build.</Description>
@@ -26,8 +26,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Cake.Common" Version="0.16.2" />
-    <PackageReference Include="Cake.Core" Version="0.16.2" />
+    <PackageReference Include="Cake.Common" Version="0.22.0" />
+    <PackageReference Include="Cake.Core" Version="0.22.0" />
   </ItemGroup>
 
 </Project>
