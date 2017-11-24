@@ -81,7 +81,11 @@ namespace Cake.Endpoint.Services
 					string directorySourcePath = directory.SourcePath;
 					if( !string.IsNullOrWhiteSpace( settings?.BuildConfiguration ) )
 						directorySourcePath = directorySourcePath.Replace( "[BuildConfiguration]", settings.BuildConfiguration );
-					context.CopyDirectory( directorySourcePath, targetDirectoryPath );
+
+					if( context.DirectoryExists( directorySourcePath ) )
+						context.CopyDirectory( directorySourcePath, targetDirectoryPath );
+					else
+						log.Warning( $"Skipped copying {directorySourcePath} because it does not exist." );
 				}
 			}
 

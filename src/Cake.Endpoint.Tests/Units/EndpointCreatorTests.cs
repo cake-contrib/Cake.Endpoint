@@ -21,12 +21,12 @@ namespace Cake.Endpoint.Tests.Units
 					{
 						new Directory
 						{
-							SourcePath = "Source/[BuildConfiguration]",
+							SourcePath = "/Working/Source/[BuildConfiguration]",
 							TargetPath = "Target/Subtarget1/"
 						},
 						new Directory
 						{
-							SourcePath = "Source/Sourcedirectory2",
+							SourcePath = "/Working/Source/Sourcedirectory2",
 							TargetPath = "Target/Subtarget2/"
 						}
 					}
@@ -66,12 +66,12 @@ namespace Cake.Endpoint.Tests.Units
 					{
 						new Directory
 						{
-							SourcePath = "Source/Sourcedirectory1",
+							SourcePath = "/Working/Source/Sourcedirectory1",
 							TargetPath = "Target/Subtarget1"
 						},
 						new Directory
 						{
-							SourcePath = "Source/Sourcedirectory2",
+							SourcePath = "/Working/Source/Sourcedirectory2",
 							TargetPath = "Target/Subtarget2"
 						}
 					}
@@ -117,17 +117,17 @@ namespace Cake.Endpoint.Tests.Units
 					{
 						new File
 						{
-							SourcePath = "Source/Sourcefile1.txt",
+							SourcePath = "/Working/Source/Sourcefile1.txt",
 							TargetPath = "Target/Subtarget1/"
 						},
 						new File
 						{
-							SourcePath = "Source/Sourcefile2.txt",
+							SourcePath = "/Working/Source/Sourcefile2.txt",
 							TargetPath = "Target/Subtarget2/"
 						},
 						new File
 						{
-							SourcePath = "Source/Sourcefile3.txt",
+							SourcePath = "/Working/Source/Sourcefile3.txt",
 							TargetPath = "Target/Subtarget3/newname.txt",
 							IsFilePath = true
 						}
@@ -160,12 +160,12 @@ namespace Cake.Endpoint.Tests.Units
 					{
 						new Directory
 						{
-							SourcePath = "Source/Sourcedirectory1",
+							SourcePath = "/Working/Source/Sourcedirectory1",
 							TargetPath = "Target/Subtarget1/"
 						},
 						new Directory
 						{
-							SourcePath = "Source/Sourcedirectory2",
+							SourcePath = "/Working/Source/Sourcedirectory2",
 							TargetPath = "Target/Subtarget2/"
 						}
 					}
@@ -205,12 +205,12 @@ namespace Cake.Endpoint.Tests.Units
 					{
 						new Directory
 						{
-							SourcePath = "Source/Sourcedirectory1",
+							SourcePath = "/Working/Source/Sourcedirectory1",
 							TargetPath = "Target/Subtarget1/"
 						},
 						new Directory
 						{
-							SourcePath = "Source/Sourcedirectory2",
+							SourcePath = "/Working/Source/Sourcedirectory2",
 							TargetPath = "Target/Subtarget2/"
 						}
 					}
@@ -250,12 +250,12 @@ namespace Cake.Endpoint.Tests.Units
 					{
 						new File
 						{
-							SourcePath = "Source/Sourcefile1.txt",
+							SourcePath = "/Working/Source/Sourcefile1.txt",
 							TargetPath = "Target/Subtarget1/"
 						},
 						new File
 						{
-							SourcePath = "Source/Sourcefile2.txt",
+							SourcePath = "/Working/Source/Sourcefile2.txt",
 							TargetPath = "Target/Subtarget2/"
 						}
 					}
