@@ -1,17 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2002
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cake.Endpoint", "Cake.Endpoint\Cake.Endpoint.csproj", "{AF8CEC22-D7EE-4F66-BBB2-CA548E1CFEC6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cake.Endpoint", "Cake.Endpoint\Cake.Endpoint.csproj", "{AF8CEC22-D7EE-4F66-BBB2-CA548E1CFEC6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cake.Endpoint.Tests", "Cake.Endpoint.Tests\Cake.Endpoint.Tests.csproj", "{4C266580-E0DF-4350-8990-4234ACA54B1F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cake.Endpoint.Tests", "Cake.Endpoint.Tests\Cake.Endpoint.Tests.csproj", "{4C266580-E0DF-4350-8990-4234ACA54B1F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{59F73016-774D-4EDC-A32D-C32422E09215}"
 	ProjectSection(SolutionItems) = preProject
 		..\build.cake = ..\build.cake
 		..\docs\Endpoints_example.json = ..\docs\Endpoints_example.json
-		..\package.nuspec = ..\package.nuspec
 		..\README.md = ..\README.md
 	EndProjectSection
 EndProject
@@ -32,5 +31,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {88AE7A0B-CA19-4F74-8DDF-E05EEAEF56D9}
 	EndGlobalSection
 EndGlobal
