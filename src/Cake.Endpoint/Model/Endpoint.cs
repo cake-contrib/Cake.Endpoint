@@ -29,5 +29,13 @@
 		///   A string representing the endpoint.
 		/// </value>
 		public string Id { get; set; }
+
+		/// <summary>
+		/// Gets or sets a value indicating that the endpoint should be released.
+		/// </summary>
+		/// <value>
+		///   A boolean representing the fact that the package should be released.
+		/// </value>
+		public bool CreateRelease { get; set; } = true;
 	}
 }
