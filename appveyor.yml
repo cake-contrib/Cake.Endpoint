@@ -10,6 +10,5 @@ deploy:
   on:
     branch: master
   server:
-  api_key:
-    secure: omAIc0IkGRlCgwPEIyqFLRvG9+QIJ6VPAGxzxvmBDYi3/FCQB++4OmumkihjYWOs
+  api_key: $(NUGET_API_KEY)
   skip_symbols: true
