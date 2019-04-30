@@ -30,7 +30,8 @@ namespace Cake.Endpoint.Tests.Fixtures
 				ProcessRunner,
 				Registry,
 				Tools,
-				Substitute.For<ICakeDataService>() );
+				Substitute.For<ICakeDataService>(),
+				Substitute.For<Core.Configuration.ICakeConfiguration>() );
 		}
 
 		public ICakeArguments Arguments { get; set; }
