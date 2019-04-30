@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -9,7 +9,7 @@
     <Authors>engelbert strauss GmbH &amp; Co. KG</Authors>
     <PackageId>Cake.Endpoint</PackageId>
     <PackageTags>Cake;Script;Build;Endpoint;Addin</PackageTags>
-    <PackageIconUrl>https://cdn.rawgit.com/cake-contrib/graphics/a5cf0f881c390650144b2243ae551d5b9f836196/png/cake-contrib-medium.png</PackageIconUrl>
+    <PackageIconUrl>https://cdn.jsdelivr.net/gh/cake-contrib/graphics/png/cake-contrib-medium.png</PackageIconUrl>
     <PackageLicenseUrl>https://github.com/cake-contrib/cake.endpoint/blob/master/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/cake-contrib/cake.endpoint</PackageProjectUrl>
     <RepositoryUrl>https://github.com/cake-contrib/cake.endpoint</RepositoryUrl>
