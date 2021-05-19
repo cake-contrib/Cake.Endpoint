@@ -65,6 +65,14 @@ namespace Cake.Endpoint.Model
 		public string IconUrl { get; set; }
 
 		/// <summary>
+		/// Gets or sets a value indicating the docs url of an endpoint.
+		/// </summary>
+		/// <value>
+		///   A string docs url of the endpoint.
+		/// </value>
+		public string DocsUrl { get; set; }
+
+		/// <summary>
 		/// Gets or sets a value indicating the service ids of an endpoint.
 		/// </summary>
 		/// <value>
