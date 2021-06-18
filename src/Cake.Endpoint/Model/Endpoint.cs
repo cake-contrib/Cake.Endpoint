@@ -49,6 +49,14 @@ namespace Cake.Endpoint.Model
 		public MlString Description { get; set; }
 
 		/// <summary>
+		/// Gets or sets a value indicating the subheadline of an endpoint.
+		/// </summary>
+		/// <value>
+		///   A string subheadline of the endpoint.
+		/// </value>
+		public MlString Subheadline { get; set; }
+
+		/// <summary>
 		/// Gets or sets a value indicating the microservice of an endpoint.
 		/// </summary>
 		/// <value>
@@ -63,6 +71,14 @@ namespace Cake.Endpoint.Model
 		///   A string icon url of the endpoint.
 		/// </value>
 		public string IconUrl { get; set; }
+
+		/// <summary>
+		/// Gets or sets a value indicating the old icon url of an endpoint.
+		/// </summary>
+		/// <value>
+		///   A string old icon url of the endpoint.
+		/// </value>
+		public string IconUrlOld { get; set; }
 
 		/// <summary>
 		/// Gets or sets a value indicating the docs url of an endpoint.
